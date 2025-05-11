@@ -4,12 +4,47 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/fc0b80239e.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to my portfolio</h1>
-    </header>
+    <nav class="nav">
+      <div class="nav__container">
+        <span class="nav__logo">Kanwar Dhillon</span>
+        <div class="nav__links">
+          <a href="#home" class="nav__link">Home</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#contact" class="nav__link">
+            <button class="nav__link__button">Contact</button>
+          </a>
+        </div>
+        <button class="nav__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="menu__wrapper">
+      <nav class="menu">
+        <button class="menu__close" onclick="closeMenu()">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <div class="menu__links">
+          <a href="#home" class="menu__link" onclick="closeMenu()">Home</a>
+          <a href="#about" class="menu__link" onclick="closeMenu()">About Me</a>
+          <a href="#projects" class="menu__link" onclick="closeMenu()"
+            >Projects</a
+          >
+          <a href="#contact" class="menu__link" onclick="closeMenu()">
+            <button class="menu__link__button">Contact</button>
+          </a>
+        </div>
+      </nav>
+    </div>
   </body>
 </html>
