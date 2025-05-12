@@ -97,6 +97,20 @@ a {
   }
 }
 
+@keyframes shineAnimate {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 470px;
+    transform: translateX(8px);
+  }
+  100% {
+    background-position: 470px;
+    transform: translateX(0px);
+  }
+}
+
 /* Navigation bar */
 
 .nav {
@@ -126,6 +140,11 @@ a {
 .nav__logo {
   font-size: 18px;
   font-weight: 700;
+  background: linear-gradient(to right, #e18043 0, white 10%, #666363 20%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineAnimate 5s linear infinite;
 }
 
 .nav__links {

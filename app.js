@@ -37,7 +37,7 @@ async function sendEmail(event) {
   } catch {
     loading.classList.add("hidden");
     alert(
-      "An error has occured. Please try again later or contact me at imanmusa@gmail.com"
+      "An error has occured. Please try again later or contact me at kdhillon469@gmail.com"
     );
   }
 }
