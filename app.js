@@ -56,3 +56,51 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+
+// email
+//  template id:template_g6v6due;
+// service id :service_appioke
+//public key YtL8j9XZGnQjJC-BM
+
+// function sendEmail(event) {
+//   event.preventDefault();
+//   console.log("form submit");
+//   emailjs.sendForm(
+//     "service_appioke",
+//     "template_g6v6due",
+//     event.target,
+//     YtL8j9XZGnQjJC - BM
+//   );
+// }
+
+async function sendEmail(event) {
+  event.preventDefault();
+  const body = document.body;
+  const loading = document.querySelector(".contact__form__loading");
+  const form = document.querySelector(".contact__form");
+
+  try {
+    // Loading state
+    loading.classList.remove("hidden");
+
+    await emailjs.sendForm(
+      "service_appioke",
+      "template_occzz9o",
+      event.target,
+      "YtL8j9XZGnQjJC-BM"
+    );
+
+    // Success state
+    form.reset();
+    loading.classList.add("hidden");
+    body.classList.add("success-open");
+    setTimeout(() => {
+      body.classList.remove("success-open");
+    }, 5000);
+  } catch {
+    loading.classList.add("hidden");
+    alert(
+      "An error has occured. Please try again later or contact me at imanmusa@gmail.com"
+    );
+  }
+}
