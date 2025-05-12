@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (scrollPosition > elementPosition) {
       return false;
     }
-    if (scrollPosition < elementPosition) {
+    if (scrollPosition <= elementPosition) {
       return true;
     }
     return false;
