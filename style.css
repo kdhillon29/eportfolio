@@ -10,7 +10,7 @@
 /* Global Styles */
 
 :root {
-  --primary: #000000;
+  --col-primary: #000000;
 }
 
 html,
@@ -24,7 +24,7 @@ html {
 
 a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--col-primary);
   cursor: pointer;
 }
 
@@ -59,7 +59,7 @@ a {
   height: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  color: var(--primary);
+  color: var(--col-primary);
   background-color: white;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +85,7 @@ a {
 }
 
 .nav__link__button {
-  background-color: var(--primary);
+  background-color: var(--col-primary);
   color: white;
   padding: 8px 20px;
   font-size: 16px;
@@ -179,7 +179,7 @@ a {
   width: 100%;
   height: 48px;
   color: white;
-  background-color: var(--primary);
+  background-color: var(--col-primary);
   border: 1px transparent solid;
   font-size: 18px;
   font-weight: 300;
@@ -189,6 +189,75 @@ a {
 
 .menu__link__button:hover {
   background-color: white;
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: var(--col-primary);
+  color: var(--col-primary);
+}
+
+/* Home */
+
+#home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.header__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--col-primary);
+}
+
+.header__span {
+  font-size: 18px;
+  font-weight: 600;
+  animation: slideUpAnimate 500ms;
+}
+
+.header__title {
+  font-size: 66px;
+  font-weight: 600;
+  line-height: 100px;
+  color: var(--col-primary);
+  animation: slideUpAnimate 500ms 100ms backwards;
+}
+
+.header__subtitle {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  animation: slideUpAnimate 500ms 150ms backwards;
+}
+
+.header__about {
+  margin-top: 8px;
+  font-size: 18px;
+  animation: slideUpAnimate 500ms 200ms backwards;
+}
+
+.header__links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  animation: slideUpAnimate 500ms 300ms backwards;
+}
+
+.header__scroll {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadeInAnimate 500ms 500ms backwards,
+    headerScrollAnimate 1000ms infinite alternate-reverse;
+}
+
+@keyframes headerScrollAnimate {
+  0% {
+    bottom: 32px;
+  }
+  100% {
+    bottom: 24px;
+  }
 }
