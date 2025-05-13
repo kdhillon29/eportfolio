@@ -1029,8 +1029,8 @@ footer {
     /* background-color: #f7fbf7; */
 
     /* filter: grayscale(80%); */
-    /* z-index: -20; */
-    height: 70vh;
+    z-index: -20;
+    height: 80vh;
     gap: 24px;
     position: relative;
   }
@@ -1038,6 +1038,10 @@ footer {
     font-size: 46px;
     /* line-height: 46px; */
     /* color: whitesmoke; */
+  }
+  .header__scroll {
+    position: absolute;
+    bottom: 0;
   }
 
   .header__subtitle {
