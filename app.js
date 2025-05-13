@@ -7,11 +7,11 @@ function closeMenu() {
 }
 var options = {
   strings: [
-    "Freelance Frontend Developer",
     "HTML5,CSS3",
     "Responsive Design",
     "JavaScript",
     "ReactJS",
+    "Git,Github",
   ],
   typeSpeed: 60,
   backSpeed: 40,
