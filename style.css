@@ -316,7 +316,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
+  gap: 18px;
   color: var(--col-primary);
   /* animation: fadeInOpacity 2s; */
   transition: all 2s ease;
@@ -337,7 +337,7 @@ a {
 .header__title {
   font-size: 56px;
   font-weight: 600;
-  line-height: 100px;
+  /* line-height: 1px; */
   color: var(--col-primary);
   /* padding: 10px; */
   animation: slideUpAnimate 500ms 100ms backwards;
@@ -346,7 +346,7 @@ a {
 .header__subtitle {
   font-size: 28px;
   height: 30px;
-  margin-top: -20px;
+  /* margin-top: -20px; */
   filter: brightness(0.8);
   opacity: 0.8;
 
