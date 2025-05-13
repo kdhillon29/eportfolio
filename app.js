@@ -5,7 +5,22 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove("open");
 }
+var options = {
+  strings: [
+    "Freelance Frontend Developer",
+    "HTML5,CSS3",
+    "Responsive Design",
+    "JavaScript",
+    "ReactJS",
+  ],
+  typeSpeed: 60,
+  backSpeed: 40,
+  loop: true,
 
+  showCursor: false,
+};
+
+var typed = new Typed("#typed-output", options);
 //send email via emailjs
 async function sendEmail(event) {
   event.preventDefault();
